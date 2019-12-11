@@ -12,7 +12,7 @@ day8part2(Output) :-
     layer_string(Layer, Output).
 
 read_image(Image, Height, Width, Depth) :-
-    open("day8input", read, Stream),
+    open("day8.input", read, Stream),
     read_line_to_codes(Stream, Line),
     maplist(number_code, Numbers, Line),
     read_layers(Numbers, Image, Height, Width, Depth).

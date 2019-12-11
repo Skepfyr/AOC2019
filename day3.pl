@@ -19,7 +19,7 @@ day3part2(Distance) :-
     min_list(Distances, Distance).
 
 read_wires(Wire1, Wire2) :-
-    csv_read_file("day3input", [RowWire1, RowWire2]),
+    csv_read_file("day3.input", [RowWire1, RowWire2]),
     RowWire1=..[_|RawWire1],
     RowWire2=..[_|RawWire2],
     maplist(parse_direction, RawWire1, Wire1),

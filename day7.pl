@@ -1,7 +1,7 @@
 :- use_module(intcode).
 
 day7part1(MaxSolution) :-
-    load_program("day7input", Program),
+    load_program("day7.input", Program),
     aggregate_all(max(X), amp_config(Program, _, X), MaxSolution).
 
 amp_config(Program, Phases, Output) :-

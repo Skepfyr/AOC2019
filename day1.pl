@@ -7,7 +7,7 @@ day1part2(Fuel) :-
     total_fuel_fuel(Input, Fuel).
 
 read_input(Input) :-
-    open("day1input", read, Stream),
+    open("day1.input", read, Stream),
     read_line_to_codes(Stream, Line),
     read_input(Stream, Input, [], Line),
     close(Stream),

@@ -14,7 +14,7 @@ day6part2(Steps) :-
 :- dynamic(directly_orbits/2).
 load_orbits :-
     csv_read_file(
-        "day6input",
+        "day6.input",
         Orbits,
         [functor(directly_orbits), separator(41), arity(2)]
     ),
